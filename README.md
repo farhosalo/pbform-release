@@ -238,30 +238,6 @@ C:\pbform\pbform-protoc.bat --cpp_out=gen --qtforms_out=gen -I. person.proto
 
 To compile the generated application, install Qt 6, the Protobuf C++ development files, and a compatible C++ toolchain such as MSVC or MSYS2/UCRT64.
 
-## Direct `protoc` invocation
-
-The wrapper is optional. Pass the plugin yourself when needed:
-
-```bash
-protoc \
-  --plugin=protoc-gen-qtforms=/path/to/protoc-gen-qtforms \
-  --cpp_out=gen \
-  --qtforms_out=gen \
-  -I. \
-  person.proto
-```
-
-For Protobuf 3.12–3.14, also pass `--experimental_allow_proto3_optional`. The supplied wrappers pass that flag automatically.
-
-### Wrapper environment variables
-
-| Variable | Purpose |
-| --- | --- |
-| `PROTOC` | Path or command name for `protoc` |
-| `PBFORM_PLUGIN_EXECUTABLE` | Path to `protoc-gen-qtforms` |
-
-Normally none of these need to be set: the wrapper resolves the plugin relative to itself.
-
 ## Current limitations
 
 - `repeated` and `map` fields, `oneof` fields, and `bytes` fields are rendered as unsupported placeholders.
