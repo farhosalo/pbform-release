@@ -1,0 +1,24 @@
+syntax = "proto3";
+package demo;
+
+// This example keeps its UI metadata exclusively in @key comments.
+// @title Edit person @table_name people @list_columns name,age,email
+message Person {
+  // @label Name @group Personal details @order 1
+  string name = 1;
+
+  // @label Age @unit years @min 0 @max 130 @group Personal details @order 2
+  int32 age = 2;
+
+  // @label Email @group Contact @order 3
+  string email = 3;
+
+  // @label Phone @group Contact @order 4
+  string phone = 4;
+
+  // @label Active @group Status @order 5
+  bool active = 5;
+
+  // @label Notes @widget textarea @group Status @order 6
+  string notes = 6;
+}
