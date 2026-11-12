@@ -1,0 +1,11 @@
+build/
+build-*/
+gen/
+cmake-build-*/
+install/
+pbform-*.tar.gz
+pbform-*.zip
+*.db
+.vscode/
+.idea/
+.DS_Store
