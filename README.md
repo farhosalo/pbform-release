@@ -247,6 +247,32 @@ To compile the generated application, install Qt 6, the Protobuf C++ development
 - `int64` and `uint64` use `QDoubleSpinBox`, so values are precise only to approximately 9e15.
 - Database support to read/write to sqlite, postgres, mango db,...
 
+## Roadmap
+
+### M1 – Core Framework (completed, untested on target platforms)
+- [x] Annotations, plugin, comment annotations, example, CI draft
+- [x] Installable package (`install(EXPORT)`, `find_package(pbform)`)
+
+### M2 – Type Coverage
+- [ ] `repeated` (table widget with add/remove)
+- [ ] `oneof` (selection + `QStackedWidget`)
+- [ ] `map`, `bytes`, nested types (`Outer.Inner`), exact 64-bit ints
+- [ ] Validation (min/max on load, required fields)
+
+### M3 – Database
+- [ ] `db_index` as real columns, filtering/sorting
+- [ ] List view with `list_columns`
+- [ ] Postgres backend behind `IStorage`
+
+### M4 – Product
+- [ ] QML output (second generator backend)
+- [x] Installable package (`install(EXPORT)`, `find_package(pbform)`)
+- [ ] Native packages (`.deb`, `.rpm`, `.pkg`) – deferred, currently archives only
+- [x] Comment annotations (`@label`, `@min`, ...) without proto import
+- [x] High-level CMake API (`pbform_add_forms`) and `pbform-protoc` wrapper
+- [ ] Documentation website, demo video, licensing model (open-core?)
+- [ ] 5–10 user interviews with target audience (mechanical engineering / embedded)
+
 ## Help and issues
 
 For installation problems or bugs, open an issue in the [pbform release repository](https://github.com/farhosalo/pbform-release/issues). Please include your operating system, Protobuf version, the relevant `.proto` file, and the complete error message.
