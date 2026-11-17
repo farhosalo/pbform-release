@@ -18,7 +18,8 @@ Download the archive for your platform from the [latest release](https://github.
 | macOS Intel | `pbform-macos-x86_64.tar.gz` |
 | Windows x64 | `pbform-windows-x64.zip` |
 
-The archives are portable; no installer is required. Extract one to any convenient location.
+No installation need, just extract the archive to the desired destination.
+No dependencies, it generates just code.
 
 Each archive contains the plugin, the platform-appropriate `pbform-protoc` wrapper, this README, and the license. The Windows archive also includes the DLLs required by the plugin.
 
@@ -244,7 +245,7 @@ To compile the generated application, install Qt 6, the Protobuf C++ development
 - Google well-known types and nested message declarations (for example, `Outer.Inner`) are not supported as form fields.
 - Recursive message fields are not supported.
 - `int64` and `uint64` use `QDoubleSpinBox`, so values are precise only to approximately 9e15.
-- Protobuf field names that conflict with C++ keywords are not handled by the generator.
+- Database support to read/write to sqlite, postgres, mango db,...
 
 ## Help and issues
 
