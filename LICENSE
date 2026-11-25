@@ -1,5 +1,5 @@
 PBFORM FREE LICENSE
-Version 1.0 — 24 November 2026
+Version 1.1 — 25 November 2026
 
 Copyright (c) 2026 Farho Salo. All rights reserved.
 
@@ -7,7 +7,8 @@ IMPORTANT: This is a proprietary license, not an open-source license. The
 Software is licensed free of charge, not sold. Please read this License before
 you download, install or use the Software. By installing or using the Software
 you accept this License. If you do not accept it, do not install or use the
-Software.
+Software. If you accept this License on behalf of a company or other legal
+entity, you confirm that you are authorized to do so.
 
 The Software is intended for use by businesses and professional developers.
 
@@ -24,7 +25,8 @@ The Software is intended for use by businesses and professional developers.
    software.
 
    "Release" means the specific version of the Software that this License
-   accompanies.
+   accompanies, identified by the version number shown in the Software's
+   version output and in its release notes.
 
    "Generated Code" means the C++ source code that the Software produces as
    output when you run it, including generated .qtform.h and .qtform.cpp
@@ -42,12 +44,17 @@ The Software is intended for use by businesses and professional developers.
    the Release free of charge, for commercial and non-commercial purposes.
 
    You may install the Release on any number of machines, including build
-   servers and CI systems, and run it there for your own projects. You may
-   allow your employees and contractors to use the Release on your behalf and
-   under your control. You remain responsible for their use.
+   servers and CI systems, and run it there for your own projects. You may make
+   copies of the Release for backup and for internal deployment within your own
+   organization and its build systems. You may allow your employees and
+   contractors to use the Release on your behalf and under your control. You
+   remain responsible for their use.
 
    This license for the Release is perpetual unless it is terminated under
-   section 10.
+   section 12.
+
+   All rights that this License does not expressly grant are reserved by the
+   Licensor.
 
 3. Future Releases
 
@@ -152,7 +159,26 @@ The Software is intended for use by businesses and professional developers.
    third-party license conflicts with this License for third-party code, the
    third-party license governs that code.
 
-9. No Warranty; Limitation of Liability
+9. Feedback
+
+   If you give the Licensor suggestions, ideas or bug reports about the
+   Software ("Feedback"), you grant the Licensor a perpetual, worldwide,
+   non-exclusive and royalty-free right to use Feedback for any purpose
+   without compensation and without any obligation to you. Feedback does not
+   include your input .proto files or Generated Code, which remain governed by
+   section 4. You are not obliged to give Feedback.
+
+10. Data and Export Compliance
+
+   This Release runs locally on your machine and does not transmit data to
+   the Licensor or to third parties.
+
+   You are responsible for complying with the export-control and sanctions
+   laws that apply to your use and transfer of the Software and Generated
+   Code. You may not use the Software if applicable law prohibits you from
+   receiving or using it.
+
+ 1. No Warranty; Limitation of Liability
 
    The Software is provided to you free of charge, as is and as available.
    The Licensor gives no warranty for the Software or for Generated Code,
@@ -160,7 +186,8 @@ The Software is intended for use by businesses and professional developers.
    purpose, freedom from defects, non-infringement or uninterrupted
    operation. You are responsible for testing the Software and Generated Code
    before you use them in production or in safety-, security- or
-   business-critical environments.
+   business-critical environments, and for keeping backups of your data and
+   source code.
 
    The Licensor is liable only for damage caused by intent or gross
    negligence, for fraudulently concealed defects, for guarantees that the
@@ -168,15 +195,27 @@ The Software is intended for use by businesses and professional developers.
    health, and under mandatory product liability law. In all other cases the
    Licensor is not liable, to the extent that the law allows.
 
-10. Termination
+   These limitations also apply to the personal liability of the Licensor's
+   employees, representatives and agents.
+
+ 1. Termination
 
    This License terminates automatically if you materially breach it and do
    not cure the breach within 30 days after written notice from the Licensor.
    If a breach of section 6 a), b) or d) cannot be cured, the Licensor may
    terminate this License immediately by written notice. Upon termination you
    must stop using the Software and delete all copies, except where the law
-   requires you to keep them. Sections 4, 5, 6, 7, 8, 9, 10 and 11 survive
-   termination as far as necessary to give them effect.
+   requires you to keep them. The provisions that by their nature are meant
+   to continue, in particular sections 4, 6, 7, 8, 11, 12 and 14, survive
+   termination.
+
+ 1. Assignment
+
+   You may not assign or transfer this License or any rights under it without
+   the Licensor's prior written consent, except as mandatory law allows. The
+   Licensor may assign this License and its rights and obligations to a
+   successor owner of the Software, for example to a company that the Licensor
+   forms or to which the Licensor transfers the Software.
 
  1. Governing Law; General Terms
 
@@ -193,6 +232,9 @@ The Software is intended for use by businesses and professional developers.
    effect, and the invalid provision is replaced by the statutory rule or the
    permitted provision that comes closest to its purpose. A failure to
    enforce a provision is not a waiver of it.
+
+   This License is written in English. A translation is provided for
+   convenience only, and the English version prevails.
 
  1. Contact
 
